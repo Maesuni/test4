@@ -12,49 +12,57 @@
 
 <body>
 <p>Ubuntu Server PHP Deployment</p>
+  <!-- Form starts here -->
+        <form method="POST" action="your-server-side-script.php">
+            
+            <!-- Name Field -->
+            <div class="mb-3">
+                <label for="firstname" class="form-label">First Name:</label>
+                <input type="text" name="firstname" id="firstname" class="form-control" required>
+            </div>
 
+            <!-- Middle Name Field -->
+            <div class="mb-3">
+                <label for="middlename" class="form-label">Middle Name:</label>
+                <input type="text" name="middlename" id="middlename" class="form-control" required>
+            </div>
 
-<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <!-- Last Name Field -->
+            <div class="mb-3">
+                <label for="lastname" class="form-label">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" class="form-control" required>
+            </div>
 
-<div>
-	<label>First name:</label>
-	<input type="text" name="firstname" class="form-control">
+            <!-- Age Field -->
+            <div class="mb-3">
+                <label for="age" class="form-label">Age:</label>
+                <input type="number" name="age" id="age" class="form-control" required>
+            </div>
+
+            <!-- Address Field -->
+            <div class="mb-3">
+                <label for="address" class="form-label">Address:</label>
+                <input type="text" name="address" id="address" class="form-control" required>
+            </div>
+
+            <!-- Course and Section Field -->
+            <div class="mb-3">
+                <label for="courseandsection" class="form-label">Course and Section:</label>
+                <input type="text" name="courseandsection" id="courseandsection" class="form-control" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+        </form>
+
 </div>
-
-<div>
-	<label>Middle name:</label>
-	<input type="text" name="middlename" class="form-control">
-</div>
-
-<div>
-	<label>last name:</label>
-	<input type="text" name="lastname" class="form-control">
-</div>
-
-<div>
-	<label>Age:</label>
-	<input type="text" name="age" class="form-control">
-</div>
-
-<div>
-	<label>Address:</label>
-	<input type="text" name="address" class="form-control">
-</div>
-
-<div>
-	<label>Course and Section:</label>
-	<input type="text" name="courseandsection" class="form-control">
-</div>
-
-
-  <!-- submit code -->
-<div>
-	  <button type="submit" class="btn btn-success">Submit</button>
-</div>
-
- </form>
- </body>
+</body>
 </html>
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
